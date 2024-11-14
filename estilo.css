@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+*{
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+
+:root{
+    --color-fondo:#F7FFF7;
+}
+
+html {
+    font-size: 16px;/*tamano base*/
+} 
+
+body{
+    background-color: #000;
+    color: #fff;
+
+}
+
+header{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+h6{
+    color: rgb(240, 32, 32);
+    font-size: 20px;
+}
+
+.productos{
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    background: #fff;
+    border: 1px solid rgb(9, 28, 32, .5);
+    border-radius: .5rem;
+    padding: 30px;
+    color: #000;
+}
+
+.productos article h3{
+    font-size: 20px;
+}
+
+.productos article img{
+    width: 400px;
+    height: 400px;
+    border-radius: .5rem;
+
+}
+
+
+div{
+    
+    Border: 5%;
+    width: 50%;  /*la anchura es el 50% del contenedor padre*/  
+    height: 50vh;/*la altura es el 50% del wiport (pantalla visible*/
+    color: brown;
+    background-imagen: url("https://images.app.goo.gl/oyxR42RHkWG8zYgo6");
+}
+
+.resenas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.fondo-color{
+    background-color: rgb(202, 189, 0);
+    padding: 20px;
+    margin-bottom: 20 px;
+}
+
+
+
+
+footer{ 
+    
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+footer form label{
+    padding: 5px;
+    width: 300px;
+}
+
+@media (max-width: 900px){
+
+    
+}
