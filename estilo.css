@@ -32,8 +32,14 @@ h1{
 }
 
 h6{
-    color: rgb(240, 32, 32);
+    color: rgb(252, 41, 217);
     font-size: 20px;
+}
+
+iframe{
+    width: 700px;
+    height:500px;
+
 }
 
 .productos{
@@ -89,25 +95,121 @@ div{
 
 
 
-footer{ 
-    
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    padding: 20px;
 }
 
-footer form{
+/* Styling the form */
+footer .contact-form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:center;
-    
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer form label{
-    padding: 5px;
-    width: 300px;
+footer .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    color: #333;
+}
+
+/* Label Styling */
+footer .contact-form label {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Input Fields and Textarea */
+footer .contact-form input,
+footer .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+footer .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Focus Effect */
+footer .contact-form input:focus,
+footer .contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Contact Information Styling */
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer .contact-info li {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+
+footer .contact-info li a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 900px){
-
+    footer{
+        flex-direction: column;
+    }
     
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer .contact-info {
+        margin-top: 15px;
+    }
 }
