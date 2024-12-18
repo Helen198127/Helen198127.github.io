@@ -76,7 +76,7 @@ div{
     width: 50%;  /*la anchura es el 50% del contenedor padre*/  
     height: 50vh;/*la altura es el 50% del wiport (pantalla visible*/
     color: brown;
-    background-imagen: url("https://images.app.goo.gl/oyxR42RHkWG8zYgo6");
+    background-image: url("https://images.app.goo.gl/oyxR42RHkWG8zYgo6");
 }
 
 .resenas{
@@ -99,13 +99,13 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin: auto;
     padding: 20px;
 }
 
 /* Styling the form */
-footer .contact-form {
+ footer .contact-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

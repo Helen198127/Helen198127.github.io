@@ -19,71 +19,53 @@
 
 <header> <!-- cabecera visual de doc. menu -->
 <!-- Logo -->
+    
+    
     <nav>
         <a href="#">Damas</a>
         <a href="#">Caballeros</a>
         <a href="#">Niños</a>
     </nav>
 
-
     <h1 aligh = "center">TANGAS Y MAS</h1>
     <h2 aligh ="center">COMPRA FACIL Y RAPIDO</h2>
-
+    <a href="carrito.html"> 🛒 <span id="contador-carrito">0</span></a>
     <iframe src="https://www.youtube.com/embed/jTpUD48EkTc?si=916Ip-eIdovnu7a_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </header><!-- encabezado -->
 
-
-
 <main>
-
-    <section class="productos">
-
+<!-- Seccion de productos -->
+    <section id="" class="productos">
+<!-- productos con descrioción, precio y bton para agragar al carrito -->
         <article>
             <h3>Corpiño</h3>
             <img src="imagen/corpiño.jpg" alt="corpiño">
-            <p>$4000</p>
+            <p class="precio">$100</p>
+            <button onclick="agregarAlcarrito('corpiño',100)">agregar</button>
+
         </article>
 
         <article>
             <h3>Tanga</h3>
             <img src="imagen/1S6190-Tanga-Duo-floral-estampado-2.jpg" alt="Bombacha">
-            <p>$5000</p>
+            <p class="precio">$200</p>
+            <button onclick="agregarAlcarrito('Tanga',200)">agregar</button>
+            
         </article>
 
         <article>
             <h3>Conjunto Deportivo</h3>
             <img src="imagen/conjunto deportivo.webp" alt="conjunto deportivo">
-            <p>$3000</p>
-        </article>
+            <p class="precio">$300</p>
+            <button onclick="agregarAlcarrito('conjunto deportivo',300)">agregar</button>
+            </article>
 
     </Section>
 
 </main> <!-- Contenido principal del documento -->
 
-<h1>RESEÑAS</h1>
-<section class="resenas">
-    <article>
-        <h6>Juana Perez</h6>
-        <p>Excelentes los productos!</p>
-    </article>
-
-    <article>
-        <h6>Juan Perez</h6>
-        <p>Excelentes los productos!</p>
-    </article>
-
-    <article>
-        <h6>Juanito Perez</h6>
-        <p>Excelentes los productos!</p>
-    </article>
-</section>
-
-<h1>CONTACTO</h1>
-
-<footer>
-    <form action="https://formspree.io/f/mjkvrzwv" method="POST" class="contact-form">
-        
+<!-- <form action="https://formspree.io/f/mjkvrzwv" method="POST" class="contact-form">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre" required>
 
@@ -97,19 +79,75 @@
         <textarea name="message" id="message" required></textarea>
 
         <button type="submit">Enviar</button>
-    </form>
+    </form> -->
+
+    
+    <h1>RESEÑAS</h1>
+    </div>
+    <section class="resenas">
+        <article>
+            <h6>Juana Perez</h6>
+            <p>Excelentes los productos!</p>
+        </article>
+    
+        <article>
+            <h6>Juan Perez</h6>
+            <p>Excelentes los productos!</p>
+        </article>
+    
+        <article>
+            <h6>Juanito Perez</h6>
+            <p>Excelentes los productos!</p>
+        </article>
+    </section>
+    
+    
+
+<h1>CONTACTO</h1>
+<footer>
+
+    <!-- <form action="" class="contact-form">
+        
+        <label for="">Nombre:</label>
+        <input type="text" id="nombre">
+
+
+        <label for="tel">Tel.:</label>
+        <input type="tel" name="tel" id="tel" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea name="message" id="message" required></textarea>
+
+        <button id="guardar">Guardar</button>
+        <button id="mostrar">Mostrar</button>
+        <button id="borrar">Borrar</button>
+
+        <P id="resultado"></P>
+
+    </form> -->
 
     <div class="contact-info">
         <ul>
-            <li>+12 3 456789</li>
-            <li>+23 4 567891</li>
-            <li>correo@electrónico.com</li>
+        <li>+12 3 456789</li>
+        <li>+23 4 567891</li>
+        <li>correo@electrónico.com</li>
         </ul>
     </div>
 </footer><!-- pie de pag -->
 
+
 <!-- <video width=" 250" height=250 src="imagen/Shakira - Soltera (Official Video).mp4"controls></video>  -->
 <!-- <audio src="imagen/sfx-texture3.mp3" controls></audio> -->
+
+
+
+
+<script src="./script.js"></script>
+<script src="./carrito.js"></script>
+
 
 </body>
 </html>
